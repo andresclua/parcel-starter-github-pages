@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "parcel src/index.html -p 3003 --open",
-    "build": "parcel build ./src/index.html",
-    "deploy": "rm -rf dist/ && npm build && gh-pages -d dist"
+    "build": "parcel build src/index.html",
+    "deploy": "rm -rf dist/ && npm run build && gh-pages -d dist"
   },
   "homepage": "https://andresclua.github.io/parcel-starter-github-pages",
   "dependencies": {
